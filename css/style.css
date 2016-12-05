@@ -1,0 +1,48 @@
+.btn{
+  border:thin solid grey;
+  font-size:xx-large;
+}
+
+.op-btn{
+  color:#58BFC3;
+}
+
+#calculator{
+  background-color:#839191;
+  width:50%;
+  margin:auto;
+  margin-top:50px;
+  border: thin groove black;
+}
+
+#current{
+  font-size:60px;
+  font-family:monospace;
+}
+
+#equation{
+  font-family:monospace;
+  font-size:20px;
+  opacity: 0.5;
+}
+
+#screen{
+  background-color:white;
+  margin:auto;
+  overflow: auto;
+  text-align:right;
+}
+
+#calc-head{
+  text-align:center;
+  font-family: monospace;
+}
+
+#equal-btn{
+  background-color:#58BFC3;
+  color:white;
+}
+
+#btn-container{
+  padding:10px;
+}

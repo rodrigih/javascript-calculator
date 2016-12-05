@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Calculator</title>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="alert alert-info" role="alert">
+    <b>NOTE:</b> Due to the way computers handle floating point numbers,
+    decimals may have a round-off error. JS offers no native way to handle
+    round-off errors, so I decided to show the answers as is.
+  </div>
+  <div id="calculator" class="container">
+
+
+
+  <div>
+    <h2 id="calc-head">
+      Javascript Calculator
+      <i class="fa fa-calculator" ari-hidden="true"></i>
+    </h2>
+  </div>
+
+  <div id="screen">
+    <p id="current">0</p>
+    <p id="equation">0</p>
+  </div>
+
+  <div id="btn-container">
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group"><div id="clear-btn" class="btn btn-default">C</div></div>
+      <div class="btn-group"><div id="back-btn" class="btn btn-default">Back</div></div>
+      <div class="btn-group"><div class="btn btn-default unary-op-btn">%</div></div>
+      <div class="btn-group"><div class="btn btn-default op-btn">/</div></div>
+    </div>
+
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group"><div class="btn btn-default num-btn">7</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">8</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">9</div></div>
+      <div class="btn-group"><div class="btn btn-default op-btn">X</div></div>
+    </div>
+
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group"><div class="btn btn-default num-btn">4</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">5</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">6</div></div>
+      <div class="btn-group"><div class="btn btn-default op-btn">-</div></div>
+    </div>
+
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group"><div class="btn btn-default num-btn">1</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">2</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">3</div></div>
+      <div class="btn-group"><div class="btn btn-default op-btn">+</div></div>
+    </div>
+
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group"><div class="btn btn-default num-btn">.</div></div>
+      <div class="btn-group"><div class="btn btn-default num-btn">0</div></div>
+      <div class="btn-group"><div class="btn btn-default unary-op-btn">+/-</div></div>
+      <div class="btn-group"><div id="equal-btn" class="btn btn-default">=</div></div>
+    </div>
+  </div>
+</div>
+
+  <div class="alert alert-danger" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">ERROR:</span>
+    <span id="err-message"></span>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+</html>
